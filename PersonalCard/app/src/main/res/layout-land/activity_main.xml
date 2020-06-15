@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/profileImage"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="@dimen/profile_pic_height_landscape"
+        android:layout_height="@dimen/profile_pic_height_landscape"
+        android:layout_marginTop="@dimen/padding_large"
         android:contentDescription="@string/profile_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25
@@ -23,7 +23,7 @@
         android:id="@+id/nameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/padding_half"
         android:text="@string/name_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         app:layout_constraintEnd_toEndOf="@+id/profileImage"
@@ -34,6 +34,7 @@
         android:id="@+id/quoteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
         android:text="@string/action_button"
         app:layout_constraintBottom_toBottomOf="@+id/emailLabel"
         app:layout_constraintEnd_toEndOf="@+id/quoteLabel"
@@ -42,10 +43,9 @@
         app:layout_constraintStart_toStartOf="@+id/quoteLabel" />
 
     <TextView
-        android:id="@+id/adressLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:id="@+id/addressLabel"
+        style="@style/common_text_view"
+        android:layout_marginTop="@dimen/padding_large"
         android:text="@string/address_label"
         app:layout_constraintEnd_toEndOf="@+id/roleLabel"
         app:layout_constraintStart_toStartOf="@+id/roleLabel"
@@ -53,19 +53,17 @@
 
     <TextView
         android:id="@+id/tweeterLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@oliver_jy"
-        app:layout_constraintEnd_toEndOf="@+id/adressLabel"
-        app:layout_constraintStart_toStartOf="@+id/adressLabel"
-        app:layout_constraintTop_toBottomOf="@+id/adressLabel" />
+        style="@style/common_text_view"
+        android:layout_marginTop="@dimen/padding_half"
+        android:text="@string/twitterAccount"
+        app:layout_constraintEnd_toEndOf="@+id/addressLabel"
+        app:layout_constraintStart_toStartOf="@+id/addressLabel"
+        app:layout_constraintTop_toBottomOf="@+id/addressLabel" />
 
     <TextView
         android:id="@+id/emailLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        style="@style/common_text_view"
+        android:layout_marginTop="@dimen/padding_half"
         android:text="@string/email_label"
         app:layout_constraintEnd_toEndOf="@+id/tweeterLabel"
         app:layout_constraintStart_toStartOf="@+id/tweeterLabel"
@@ -75,10 +73,11 @@
         android:id="@+id/quoteLabel"
         android:layout_width="295dp"
         android:layout_height="67dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginEnd="@dimen/padding_large"
+        android:layout_marginBottom="@dimen/padding_large"
+        android:textSize="@dimen/quote_text_size"
         android:text="@string/quote_label"
         app:layout_constraintBottom_toTopOf="@+id/quoteButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,9 +87,8 @@
 
     <TextView
         android:id="@+id/roleLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        style="@style/common_text_view"
+        android:layout_marginTop="@dimen/padding_half"
         android:text="@string/role_label"
         app:layout_constraintEnd_toEndOf="@+id/nameLabel"
         app:layout_constraintStart_toStartOf="@+id/nameLabel"
