@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
         outState.putString(QUOTE_KEY, quoteLabel.text.toString())
     }
 
+    /**
+     * Changes the current quote label to a new random quote
+     */
     private fun setNewQuote() {
         quoteLabel.text = dataSource.getNewQuote()
     }
