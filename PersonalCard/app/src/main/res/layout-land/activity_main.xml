@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25
+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/me_at_the_piano" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/quoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_button"
+        app:layout_constraintBottom_toBottomOf="@+id/emailLabel"
+        app:layout_constraintEnd_toEndOf="@+id/quoteLabel"
+        app:layout_constraintHorizontal_bias="0.5
+"
+        app:layout_constraintStart_toStartOf="@+id/quoteLabel" />
+
+    <TextView
+        android:id="@+id/adressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/address_label"
+        app:layout_constraintEnd_toEndOf="@+id/roleLabel"
+        app:layout_constraintStart_toStartOf="@+id/roleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/roleLabel" />
+
+    <TextView
+        android:id="@+id/tweeterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@oliver_jy"
+        app:layout_constraintEnd_toEndOf="@+id/adressLabel"
+        app:layout_constraintStart_toStartOf="@+id/adressLabel"
+        app:layout_constraintTop_toBottomOf="@+id/adressLabel" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/email_label"
+        app:layout_constraintEnd_toEndOf="@+id/tweeterLabel"
+        app:layout_constraintStart_toStartOf="@+id/tweeterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tweeterLabel" />
+
+    <TextView
+        android:id="@+id/quoteLabel"
+        android:layout_width="295dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/quote_label"
+        app:layout_constraintBottom_toTopOf="@+id/quoteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/role_label"
+        app:layout_constraintEnd_toEndOf="@+id/nameLabel"
+        app:layout_constraintStart_toStartOf="@+id/nameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
